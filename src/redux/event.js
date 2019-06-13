@@ -11,7 +11,7 @@ export const EVENT_GET_ALL = "EVENT_GET_ALL";
 /* States */
 const initialState = {};
 const allEventsState = {
-  [
+  events: [
     {
       name: "Grand Opening",
       start: 1561982400,
