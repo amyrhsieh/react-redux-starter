@@ -9,7 +9,7 @@ export const EVENT_GET = "EVENT_GET";
 export const EVENT_GET_ALL = "EVENT_GET_ALL";
 
 /* Reducers */
-export default function reducer(state = [], action = {}) {
+export default function eventReducer(state = [], action = {}) {
   switch (action.type) {
     //Get all events
     case EVENT_GET_ALL:
