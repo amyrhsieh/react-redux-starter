@@ -1,5 +1,6 @@
-import { createStore } from 'redux';
+import { createStore, combineReducers } from 'redux';
 import eventReducer from './event';
+import entryReducer from './entry';
 
 const initialState = {
   events: [
@@ -17,7 +18,22 @@ const initialState = {
       end: 1562072400,
       location: "There"
     }
+  ],
+  entries: [
+    {
+      timestamp: 1560427200,
+      content: "Hello world! This is my first blog entry."
+    },
+    {
+      timestamp: 1560513600,
+      content: "This is my second blog entry."
+    },
   ]
 };
 
-export const store = createStore(eventReducer, initialState);
+export const reducer = combineReducers({
+  events: eventReducer,
+  entries: entryReducer
+});
+
+export const store = createStore(reducer, initialState);

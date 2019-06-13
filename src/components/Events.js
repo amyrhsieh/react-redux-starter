@@ -3,7 +3,7 @@ import { connect } from 'react-redux';
 
 const Events = props => (
   <div>
-    Events
+    <h2>Events</h2>
     <ul>
       {props.events.map(event =>
         (<li key={event.id}>{event.name}</li>)

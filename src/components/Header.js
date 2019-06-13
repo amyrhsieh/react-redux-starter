@@ -15,7 +15,7 @@ const Header = () => (
         <Link to="/events" className="nav-link">Events</Link>
       </Nav.Item>
       <Nav.Item>
-        <Link to="/page2" className="nav-link">Page 2</Link>
+        <Link to="/blog" className="nav-link">Blog</Link>
       </Nav.Item>
     </Nav>
   </header>
