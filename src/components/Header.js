@@ -11,13 +11,13 @@ const Header = () => (
         <Nav.Link href="/">Home</Nav.Link>
       </Nav.Item>
       <Nav.Item>
-        <Nav.Link href="/page1">Page 1</Nav.Link>
+        <Nav.Link href="/events">Events</Nav.Link>
       </Nav.Item>
       <Nav.Item>
         <Nav.Link href="/page2">Page 2</Nav.Link>
       </Nav.Item>
     </Nav>
   </header>
-)
+);
 
-export default Header
+export default Header;

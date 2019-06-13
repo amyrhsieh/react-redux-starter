@@ -8,31 +8,12 @@ export const EVENT_DELETE = "EVENT_DELETE";
 export const EVENT_GET = "EVENT_GET";
 export const EVENT_GET_ALL = "EVENT_GET_ALL";
 
-/* States */
-const initialState = {};
-const allEventsState = {
-  events: [
-    {
-      name: "Grand Opening",
-      start: 1561982400,
-      end: 1561986000,
-      location: "Here"
-    },
-    {
-      name: "Special sale",
-      start: 1562068800,
-      end: 1562072400,
-      location: "There"
-    }
-  ]
-};
-
 /* Reducers */
-export default function reducer(state = initialState, action = {}) {
+export default function reducer(state = [], action = {}) {
   switch (action.type) {
     //Get all events
     case EVENT_GET_ALL:
-      return allEventsState;
+      return state;
     default:
       return state;
   }
