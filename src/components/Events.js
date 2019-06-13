@@ -12,7 +12,6 @@ const Events = props => (
   </div>
 );
 
-
 const mapStateToProps = state => ({
   events: state.events
 });
