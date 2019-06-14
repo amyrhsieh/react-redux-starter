@@ -1,4 +1,6 @@
 # React Redux Starter Kit
+A work in progress.
+
 Based on [Webpack 4 tutorial](https://www.valentinog.com/blog/webpack/). <-- many thanks to
 Valentino Gagliardi for this great tutorial.
 
