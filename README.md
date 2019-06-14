@@ -13,6 +13,7 @@ Includes:
 - React Bootstrap
 - Deployment to S3 (compiled assets)
 - yarn.lock
+- Jest and Enzyme for testing
 
 ## Prerequisites
 - Node, npm
@@ -29,3 +30,5 @@ Run the prod_deploy.sh script: `sh prod_deploy.sh`
 - https://www.valentinog.com/blog/webpack/
 - https://webpack.js.org/
 - https://github.com/webpack-contrib/mini-css-extract-plugin
+- https://jestjs.io/en/
+- https://github.com/airbnb/enzyme
