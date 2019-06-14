@@ -1,0 +1,44 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Header (Snapshot) Header component renders header nav 1`] = `
+<header>
+  <div
+    className="justify-content-center nav"
+    onKeyDown={[Function]}
+  >
+    <div
+      className="nav-item"
+    >
+      <a
+        className="nav-link"
+        href="/"
+        onClick={[Function]}
+      >
+        Home
+      </a>
+    </div>
+    <div
+      className="nav-item"
+    >
+      <a
+        className="nav-link"
+        href="/events"
+        onClick={[Function]}
+      >
+        Events
+      </a>
+    </div>
+    <div
+      className="nav-item"
+    >
+      <a
+        className="nav-link"
+        href="/blog"
+        onClick={[Function]}
+      >
+        Blog
+      </a>
+    </div>
+  </div>
+</header>
+`;
