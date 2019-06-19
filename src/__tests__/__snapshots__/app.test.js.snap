@@ -1,0 +1,9 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`App (Snapshot) App component renders App 1`] = `
+<Fragment>
+  <Header />
+  <Main />
+  <Footer />
+</Fragment>
+`;

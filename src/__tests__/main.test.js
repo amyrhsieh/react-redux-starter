@@ -1,6 +1,6 @@
 import React from 'react';
 import renderer from 'react-test-renderer';
-import Main from '../components/Main.js';
+import Main from 'Components/Main.js';
 import { shallow } from 'enzyme';
 
 describe('Main (Snapshot)', () => {
