@@ -38,6 +38,7 @@
   },
   "dependencies": {
     "bootstrap": "^4.3.1",
+    "enzyme-to-json": "^3.3.5",
     "fstream": "^1.0.12",
     "react-bootstrap": "^1.0.0-beta.8",
     "react-redux": "^7.1.0",
@@ -62,6 +63,12 @@
       "^Tests(.*)$": "<rootDir>/src/__tests__$1",
       "^Components(.*)$": "<rootDir>/src/components$1",
       "^Redux(.*)$": "<rootDir>/src/redux$1"
-    }
+    },
+    "setupFilesAfterEnv": [
+      "<rootDir>/enzymeSetup.js"
+    ],
+    "snapshotSerializers": [
+      "enzyme-to-json/serializer"
+    ]
   }
 }

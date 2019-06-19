@@ -1,0 +1,39 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Main (Snapshot) Main component renders Main 1`] = `
+<main
+  className="container"
+>
+  <Switch>
+    <Route
+      component={[Function]}
+      exact={true}
+      path="/"
+    />
+    <Route
+      component={
+        Object {
+          "$$typeof": Symbol(react.memo),
+          "WrappedComponent": [Function],
+          "compare": null,
+          "displayName": "Connect(Events)",
+          "type": [Function],
+        }
+      }
+      path="/events"
+    />
+    <Route
+      component={
+        Object {
+          "$$typeof": Symbol(react.memo),
+          "WrappedComponent": [Function],
+          "compare": null,
+          "displayName": "Connect(Blog)",
+          "type": [Function],
+        }
+      }
+      path="/blog"
+    />
+  </Switch>
+</main>
+`;
