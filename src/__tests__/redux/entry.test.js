@@ -1,4 +1,5 @@
-import * as entryModule from 'Redux/entry';
+import entryReducer, * as entryModule from 'Redux/entry';
+import entries from 'Mocks/entriesMock';
 
 /*** Action creator tests ***/
 describe('getAllEntries action creator', () => {
@@ -18,3 +19,16 @@ describe('createEntry action creator', () => {
 });
 
 /*** Reducer tests ***/
+
+describe('entryReducer', () => {
+  it('when action is ENTRY_GET_ALL, returns state', () => {
+    const result = entryReducer(entries, entryModule.getAllEntries());
+    expect(result).toEqual(entries);
+  });
+
+  it('when action is ENTRY_CREATE, adds new entry to state', () => {
+    const originalLength = entries.length;
+    const result = entryReducer(entries, entryModule.createEntry());
+    expect(result.length).toEqual(originalLength + 1);
+  });
+});
