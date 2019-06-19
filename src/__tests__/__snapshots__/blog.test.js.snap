@@ -1,0 +1,24 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Blog (Snapshot) Blog component renders Blog 1`] = `
+<div>
+  <h2>
+    Blog
+  </h2>
+  <ul>
+    <li>
+      Hello world! This is my first blog entry.
+    </li>
+    <li>
+      This is my second blog entry.
+    </li>
+  </ul>
+  <button
+    className="btn btn-outline-primary"
+    onClick={[Function]}
+    type="button"
+  >
+    Add entry
+  </button>
+</div>
+`;

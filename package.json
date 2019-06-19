@@ -57,7 +57,11 @@
     ],
     "moduleNameMapper": {
       "\\.(jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2)$": "<rootDir>/src/__mocks__/fileMock.js",
-      "\\.(css|scss)$": "<rootDir>/src/__mocks__/styleMock.js"
+      "\\.(css|scss)$": "<rootDir>/src/__mocks__/styleMock.js",
+      "^Mocks(.*)$": "<rootDir>/src/__mocks__$1",
+      "^Tests(.*)$": "<rootDir>/src/__tests__$1",
+      "^Components(.*)$": "<rootDir>/src/components$1",
+      "^Redux(.*)$": "<rootDir>/src/redux$1"
     }
   }
 }
