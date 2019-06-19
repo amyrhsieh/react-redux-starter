@@ -1,6 +1,6 @@
 import React from 'react';
 import { connect } from 'react-redux';
-import { createEntry } from '../redux/entry';
+import { createEntry } from 'Redux/entry';
 
 export const Blog = ({entries, onAddEntryClick}) => (
   <div>
