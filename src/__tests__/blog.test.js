@@ -1,7 +1,7 @@
 import React from 'react';
 import renderer from 'react-test-renderer';
-import { Blog } from '../components/Blog';
-import entries from 'Mocks/entryMock';
+import { Blog } from 'Components/Blog';
+import entries from 'Mocks/entriesMock';
 
 const onAddEntryClickMock = () => {return true;}
 

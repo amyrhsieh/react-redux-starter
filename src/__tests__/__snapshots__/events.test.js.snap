@@ -1,0 +1,17 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Events (Snapshot) Events component renders Events 1`] = `
+<div>
+  <h2>
+    Events
+  </h2>
+  <ul>
+    <li>
+      Grand Opening
+    </li>
+    <li>
+      Special sale
+    </li>
+  </ul>
+</div>
+`;

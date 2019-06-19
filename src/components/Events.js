@@ -1,7 +1,7 @@
 import React from 'react';
 import { connect } from 'react-redux';
 
-const Events = props => (
+export const Events = props => (
   <div>
     <h2>Events</h2>
     <ul>

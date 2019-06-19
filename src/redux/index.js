@@ -1,8 +1,8 @@
 import { createStore, combineReducers } from 'redux';
 import eventReducer from './event';
 import entryReducer from './entry';
-import entries from 'Mocks/entryMock';
-import events from 'Mocks/eventMock';
+import entries from 'Mocks/entriesMock';
+import events from 'Mocks/eventsMock';
 
 const initialState = {
   events,
