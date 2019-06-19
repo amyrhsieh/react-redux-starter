@@ -2,11 +2,8 @@
 /*** e.g. for display of blog entries                           ***/
 
 /* Action types */
-export const ENTRY_CREATE = "ENTRY_CREATE";
-export const ENTRY_UPDATE = "ENTRY_UPDATE";
-export const ENTRY_DELETE = "ENTRY_DELETE";
-export const ENTRY_GET = "ENTRY_GET";
 export const ENTRY_GET_ALL = "ENTRY_GET_ALL";
+export const ENTRY_CREATE = "ENTRY_CREATE";
 
 /* Reducers */
 export default function entryReducer(state = [], action = {}) {
@@ -22,7 +19,7 @@ export default function entryReducer(state = [], action = {}) {
 }
 
 /* Action creators */
-export const getAllEntries = () => { type: ENTRY_GET_ALL }
+export const getAllEntries = () => ({ type: ENTRY_GET_ALL });
 
 export const createEntry = () => {
   const timestamp = new Date();

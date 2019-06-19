@@ -1,6 +1,6 @@
 import React from 'react';
 import renderer from 'react-test-renderer';
-import Footer from '../components/Footer.js';
+import Footer from 'Components/Footer.js';
 
 describe('Footer (Snapshot)', () => {
   it('Footer component renders footer', () => {

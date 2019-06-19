@@ -1,6 +1,6 @@
 import React from 'react';
 import renderer from 'react-test-renderer';
-import Header from '../components/Header.js';
+import Header from 'Components/Header.js';
 import { StaticRouter } from 'react-router';
 
 describe('Header (Snapshot)', () => {
