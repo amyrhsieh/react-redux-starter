@@ -1,16 +1,13 @@
 # React Redux Starter Kit
 A work in progress.
 
-Based on [Webpack 4 tutorial](https://www.valentinog.com/blog/webpack/). <-- many thanks to
-Valentino Gagliardi for this great tutorial.
-
 Includes:
 - React (v16+)
 - Webpack (v4+)
 - Redux
 - SCSS
 - Basic nav with react router (v5+)
-- React Bootstrap
+- Bootstrap stylesheet
 - Deployment to S3 (compiled assets)
 - yarn.lock
 - Jest and Enzyme for testing
@@ -27,7 +24,7 @@ Includes:
 Run the prod_deploy.sh script: `sh prod_deploy.sh`
 
 ## Resources
-- https://www.valentinog.com/blog/webpack/
+- https://www.valentinog.com/blog/webpack/ <-- many thanks to Valentino Gagliardi for this great tutorial.
 - https://webpack.js.org/
 - https://github.com/webpack-contrib/mini-css-extract-plugin
 - https://jestjs.io/en/

@@ -3,16 +3,18 @@
 exports[`Header (Snapshot) Header component renders header nav 1`] = `
 <header>
   <div
+    activeKey="/home"
     className="justify-content-center nav"
-    onKeyDown={[Function]}
   >
     <div
       className="nav-item"
     >
       <a
-        className="nav-link"
+        aria-current="page"
+        className="nav-link active"
         href="/"
         onClick={[Function]}
+        style={Object {}}
       >
         Home
       </a>
@@ -21,6 +23,7 @@ exports[`Header (Snapshot) Header component renders header nav 1`] = `
       className="nav-item"
     >
       <a
+        aria-current={null}
         className="nav-link"
         href="/events"
         onClick={[Function]}
@@ -32,6 +35,7 @@ exports[`Header (Snapshot) Header component renders header nav 1`] = `
       className="nav-item"
     >
       <a
+        aria-current={null}
         className="nav-link"
         href="/blog"
         onClick={[Function]}
