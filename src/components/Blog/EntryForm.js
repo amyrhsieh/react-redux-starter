@@ -4,11 +4,7 @@ import { Form, Field } from 'react-final-form';
 
 import styles from './entryForm.scss';
 
-const onSubmit = values => {
-  window.alert(JSON.stringify(values, 0, 2));
-}
-
-const EntryForm = () => (
+const EntryForm = ({onSubmit}) => (
   <Form
     onSubmit={onSubmit}
     render={({ handleSubmit, form, submitting, pristine, values }) => (

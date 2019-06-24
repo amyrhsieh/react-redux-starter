@@ -21,12 +21,7 @@ export default function entryReducer(state = [], action = {}) {
 /* Action creators */
 export const getAllEntries = () => ({ type: ENTRY_GET_ALL });
 
-export const createEntry = () => {
-  const timestamp = new Date();
-  const entry = {
-    timestamp: timestamp/1000,
-    content: `New entry at ${timestamp.toISOString()}`
-  }
+export const createEntry = entry => {
   return {
     type: ENTRY_CREATE,
     entry

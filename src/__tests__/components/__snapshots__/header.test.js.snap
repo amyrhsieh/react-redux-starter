@@ -3,7 +3,6 @@
 exports[`Header (Snapshot) Header component renders header nav 1`] = `
 <header>
   <div
-    activeKey="/home"
     className="justify-content-center nav"
   >
     <div

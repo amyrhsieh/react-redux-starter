@@ -5,10 +5,7 @@ import styles from './header.scss';
 
 const Header = () => (
   <header>
-    <div
-      className="justify-content-center nav"
-      activeKey="/home"
-    >
+    <div className="justify-content-center nav">
       <div className="nav-item">
         <NavLink to="/" exact className="nav-link" activeClassName="active">Home</NavLink>
       </div>

@@ -3,7 +3,7 @@ import { connect } from 'react-redux';
 import { createEntry } from 'Redux/entry';
 import EntryForm from './EntryForm';
 
-export const Blog = ({entries, onAddEntryClick}) => (
+export const Blog = ({entries, dispatchCreateEntry}) => (
   <div>
     <h2>Blog</h2>
     <ul>
@@ -11,7 +11,7 @@ export const Blog = ({entries, onAddEntryClick}) => (
         (<li key={entry.timestamp}>{entry.content}</li>)
       )}
     </ul>
-    <EntryForm />
+    <EntryForm onSubmit={dispatchCreateEntry} />
   </div>
 );
 
@@ -21,8 +21,12 @@ const mapStateToProps = state => ({
 
 const mapDispatchToProps = dispatch => {
   return {
-    onAddEntryClick: () => {
-      dispatch(createEntry())
+    dispatchCreateEntry: (values) => {
+      const entry = {
+        content: values.content,
+        timestamp: Date.now()
+      }
+      dispatch(createEntry(entry));
     }
   }
 }
