@@ -7,3 +7,7 @@ textarea {
   width: 550px;
   height: 100px;
 }
+
+button + button {
+  margin-left: 10px;
+}

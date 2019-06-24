@@ -54,7 +54,8 @@ module.exports = (env, options) => {
         Mocks: path.resolve(__dirname, 'src/__mocks__/'),
         Tests: path.resolve(__dirname, 'src/__tests__/'),
         Components: path.resolve(__dirname, 'src/components/'),
-        Redux: path.resolve(__dirname, 'src/redux/')
+        Redux: path.resolve(__dirname, 'src/redux/'),
+        Styles: path.resolve(__dirname, 'src/styles/')
       }
     },
     plugins: [

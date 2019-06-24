@@ -5,6 +5,9 @@ exports[`Events (Snapshot) Events component renders Events 1`] = `
   <h2>
     Events
   </h2>
+  <p>
+    A very basic list of events, sourced from the Redux store.
+  </p>
   <ul>
     <li>
       Grand Opening

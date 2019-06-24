@@ -18,11 +18,16 @@ const EntryForm = ({onSubmit}) => (
           />
         </div>
         <div className="buttons">
-          <button type="submit" disabled={submitting || pristine}>
+          <button
+            type="submit"
+            className="btn btn-primary"
+            disabled={submitting || pristine}
+          >
             Submit
           </button>
           <button
             type="button"
+            className="btn btn-light"
             onClick={form.reset}
             disabled={submitting || pristine}
           >

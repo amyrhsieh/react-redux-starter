@@ -5,10 +5,11 @@ Includes:
 - React (v16+)
 - Webpack (v4+)
 - Redux
+- [React Final Form](https://github.com/final-form/react-final-form)
 - SCSS
 - Basic nav with react router (v5+)
 - Bootstrap stylesheet
-- Deployment to S3 (compiled assets)
+- Deployment to AWS S3 (compiled assets)
 - yarn.lock
 - Jest and Enzyme for testing
 

@@ -5,6 +5,14 @@ exports[`Blog (Snapshot) Blog component renders Blog 1`] = `
   <h2>
     Blog
   </h2>
+  <p>
+    A very simple blog demo that displays blog entries from the Redux store. Includes form (React Final Form) to add new entries.
+  </p>
+  <p
+    className="bold"
+  >
+    Blog Entries
+  </p>
   <ul>
     <li
       key="1560427200"
