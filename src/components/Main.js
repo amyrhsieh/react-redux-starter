@@ -1,8 +1,8 @@
 import React from 'react';
 import { Switch, Route } from 'react-router-dom';
 import Home from './Home';
-import Events from './Events';
-import Blog from './Blog';
+import Events from './Events/';
+import Blog from './Blog/';
 
 const Main = () => (
   <main className="container">

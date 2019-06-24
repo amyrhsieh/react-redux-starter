@@ -1,6 +1,7 @@
 import React from 'react';
 import { connect } from 'react-redux';
 import { createEntry } from 'Redux/entry';
+import EntryForm from './EntryForm';
 
 export const Blog = ({entries, onAddEntryClick}) => (
   <div>
@@ -10,7 +11,7 @@ export const Blog = ({entries, onAddEntryClick}) => (
         (<li key={entry.timestamp}>{entry.content}</li>)
       )}
     </ul>
-    <button type="button" className="btn btn-outline-primary" onClick={() => onAddEntryClick()}>Add entry</button>
+    <EntryForm />
   </div>
 );
 
