@@ -2,6 +2,8 @@ import React from 'react';
 import { render } from 'react-dom';
 import { Form, Field } from 'react-final-form';
 
+import styles from './entryForm.scss';
+
 const onSubmit = values => {
   window.alert(JSON.stringify(values, 0, 2));
 }
@@ -9,16 +11,14 @@ const onSubmit = values => {
 const EntryForm = () => (
   <Form
     onSubmit={onSubmit}
-    initialValues={{ firstName: 'Amy' }}
     render={({ handleSubmit, form, submitting, pristine, values }) => (
       <form onSubmit={handleSubmit}>
         <div>
-          <label>First Name</label>
+          <label className="formLabel">New Entry</label>
           <Field
-            name="firstName"
-            component="input"
-            type="text"
-            placeholder="First Name"
+            name="content"
+            component="textarea"
+            placeholder="Write your blog entry here"
           />
         </div>
         <div className="buttons">
