@@ -6,6 +6,7 @@
   "scripts": {
     "start": "webpack-dev-server --mode development --open",
     "build": "webpack --mode production",
+    "deploy": "sh prod_deploy.sh",
     "test": "jest"
   },
   "keywords": [],

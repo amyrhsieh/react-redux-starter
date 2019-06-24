@@ -8,6 +8,6 @@ if [ -z "$BUCKETNAME" ]; then
 fi
 
 echo "Deploying to production..."
-npm run build
+yarn build
 aws s3 sync dist/ s3://$BUCKETNAME
 echo "Done."

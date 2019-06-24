@@ -21,7 +21,8 @@ Includes:
 - Please use `yarn` (not `npm`) to manage packages.
 
 ## Build and deploy
-Run the prod_deploy.sh script: `sh prod_deploy.sh`
+- To build: `yarn build`
+- To deploy to S3: `yarn deploy`
 
 ## Resources
 - https://www.valentinog.com/blog/webpack/ <-- many thanks to Valentino Gagliardi for this great tutorial.
