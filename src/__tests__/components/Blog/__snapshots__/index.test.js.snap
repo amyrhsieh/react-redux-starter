@@ -6,19 +6,19 @@ exports[`Blog (Snapshot) Blog component renders Blog 1`] = `
     Blog
   </h2>
   <ul>
-    <li>
+    <li
+      key="1560427200"
+    >
       Hello world! This is my first blog entry.
     </li>
-    <li>
+    <li
+      key="1560513600"
+    >
       This is my second blog entry.
     </li>
   </ul>
-  <button
-    className="btn btn-outline-primary"
-    onClick={[Function]}
-    type="button"
-  >
-    Add entry
-  </button>
+  <EntryForm
+    onSubmit={[Function]}
+  />
 </div>
 `;

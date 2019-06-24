@@ -1,5 +1,4 @@
 import React from 'react';
-import renderer from 'react-test-renderer';
 import Main from 'Components/Main.js';
 import { shallow } from 'enzyme';
 

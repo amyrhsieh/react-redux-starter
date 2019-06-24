@@ -11,10 +11,11 @@ describe('getAllEntries action creator', () => {
 
 describe('createEntry action creator', () => {
   it('should create an action of type ENTRY_CREATE with entry', () => {
-    const action = entryModule.createEntry();
+    const newEntry = entries[0];
+    const action = entryModule.createEntry(entries[0]);
     expect(action.type).toEqual(entryModule.ENTRY_CREATE);
-    expect(action.entry.content).toMatch(/New entry at/);
-    expect(action.entry.timestamp).toBeGreaterThan(0);
+    expect(action.entry.content).toBe(newEntry.content);
+    expect(action.entry.timestamp).toBe(newEntry.timestamp);
   });
 });
 
