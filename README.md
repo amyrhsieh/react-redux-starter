@@ -1,4 +1,4 @@
-# React Redux Starter Kit
+# React Redux Demo
 A work in progress.
 
 Includes:
@@ -14,8 +14,9 @@ Includes:
 - Jest and Enzyme for testing
 
 ## Prerequisites
-- Node, npm
-- An s3 bucket set up for web hosting
+- [Node](https://nodejs.org), npm
+- An AWS S3 bucket set up for web hosting (see [AWS guide to Hosting a static website on S3](https://docs.aws.amazon.com/AmazonS3/latest/dev/WebsiteHosting.html))
+- [AWS CLI](https://aws.amazon.com/cli/) set up with credentials to access your S3 bucket ^
 
 ## Setup
 - S3: Create a file in root directory called `s3bucketname`, with the s3 bucket name for deployment (content should be just a single string). This file will be gitignored.
@@ -31,3 +32,4 @@ Includes:
 - https://github.com/webpack-contrib/mini-css-extract-plugin
 - https://jestjs.io/en/
 - https://github.com/airbnb/enzyme
+- https://docs.aws.amazon.com/AmazonS3/latest/dev/WebsiteHosting.html
