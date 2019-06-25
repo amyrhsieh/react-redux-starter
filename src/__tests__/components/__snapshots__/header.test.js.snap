@@ -2,6 +2,11 @@
 
 exports[`Header (Snapshot) Header component renders header nav 1`] = `
 <header>
+  <div>
+    <h1>
+      React Redux Demo
+    </h1>
+  </div>
   <div
     className="justify-content-center nav"
   >

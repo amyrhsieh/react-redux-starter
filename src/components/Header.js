@@ -5,6 +5,9 @@ import styles from './header.scss';
 
 const Header = () => (
   <header>
+    <div>
+      <h1>React Redux Demo</h1>
+    </div>
     <div className="justify-content-center nav">
       <div className="nav-item">
         <NavLink to="/" exact className="nav-link" activeClassName="active">Home</NavLink>

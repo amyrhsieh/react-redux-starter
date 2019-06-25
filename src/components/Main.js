@@ -4,6 +4,8 @@ import Home from './Home';
 import Events from './Events/';
 import Blog from './Blog/';
 
+import styles from './main.scss';
+
 const Main = () => (
   <main className="container">
     <Switch>
