@@ -10,5 +10,12 @@ exports[`Home (Snapshot) Home component renders Home 1`] = `
     <br />
     -AH
   </p>
+  <div
+    className="center"
+  >
+    <img
+      src="test-file-stub"
+    />
+  </div>
 </div>
 `;

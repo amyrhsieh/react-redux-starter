@@ -1,6 +1,6 @@
 const path = require('path');
-const HtmlWebPackPlugin = require("html-webpack-plugin");
-const MiniCssExtractPlugin = require("mini-css-extract-plugin");
+const HtmlWebPackPlugin = require('html-webpack-plugin');
+const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const UglifyJsPlugin = require('uglifyjs-webpack-plugin');
 const OptimizeCSSAssetsPlugin = require('optimize-css-assets-webpack-plugin');
 
@@ -52,6 +52,12 @@ module.exports = (env, options) => {
             'sass-loader',
           ],
         },
+        {
+          test: /\.(png|svg|jpg|gif)$/,
+          use: [
+            'file-loader'
+          ]
+        }
       ]
     },
     resolve: {
@@ -61,6 +67,7 @@ module.exports = (env, options) => {
         Tests: path.resolve(__dirname, 'src/__tests__/'),
         Components: path.resolve(__dirname, 'src/components/'),
         Redux: path.resolve(__dirname, 'src/redux/'),
+        Images: path.resolve(__dirname, 'src/images/'),
         Styles: path.resolve(__dirname, 'src/styles/')
       }
     },
