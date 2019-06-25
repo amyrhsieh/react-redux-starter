@@ -1,10 +1,16 @@
 const path = require('path');
 const HtmlWebPackPlugin = require("html-webpack-plugin");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
+const UglifyJsPlugin = require('uglifyjs-webpack-plugin');
+const OptimizeCSSAssetsPlugin = require('optimize-css-assets-webpack-plugin');
 
 module.exports = (env, options) => {
   //Different output option for production and development modes
-  const output = (options.mode == 'production') ? {} :
+  const output = (options.mode == 'production') ?
+    {
+      path: path.resolve(__dirname, 'dist'),
+      filename: '[name].[contenthash].js'
+    } :
     {
       path: path.resolve(__dirname, 'dist'),
       filename: 'index_bundle.js',
@@ -64,9 +70,22 @@ module.exports = (env, options) => {
         filename: "./index.html"
       }),
       new MiniCssExtractPlugin({
-        filename: "[name].css",
-        chunkFilename: "[id].css"
+        filename: "[name].[contenthash].css",
+        chunkFilename: "[id].[contenthash].css"
       })
-    ]
+    ],
+    optimization: {
+      runtimeChunk: 'single',
+      splitChunks: {
+        cacheGroups: {
+          vendor: {
+            test: /[\\/]node_modules[\\/]/,
+            name: 'vendors',
+            chunks: 'all'
+          }
+        }
+      },
+      minimizer: [new UglifyJsPlugin(), new OptimizeCSSAssetsPlugin({})],
+    }
   };
 };
