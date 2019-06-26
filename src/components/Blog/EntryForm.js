@@ -2,13 +2,13 @@ import React from 'react';
 import { render } from 'react-dom';
 import { Form, Field } from 'react-final-form';
 
-import styles from './entryForm.scss';
+import styles from 'Styles/form.scss';
 
 const EntryForm = ({onSubmit}) => (
   <Form
     onSubmit={onSubmit}
     render={({ handleSubmit, form, submitting, pristine, values }) => (
-      <form onSubmit={handleSubmit}>
+      <form onSubmit={handleSubmit} className="standard-form">
         <div>
           <label className="formLabel">New Entry</label>
           <Field

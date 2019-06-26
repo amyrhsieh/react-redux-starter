@@ -1,8 +1,6 @@
 import React from 'react';
 import Image from 'Images/image.jpg';
 
-import styles from './home.scss';
-
 const Home = () => (
   <div>
     <h2>Home</h2>

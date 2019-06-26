@@ -1,13 +1,13 @@
-.formLabel {
+.standard-form label {
   font-weight: bold;
   display: block;
 }
 
-textarea {
+.standard-form textarea {
   width: 550px;
   height: 100px;
 }
 
-button + button {
+.standard-form button + button {
   margin-left: 10px;
 }

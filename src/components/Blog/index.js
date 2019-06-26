@@ -3,7 +3,7 @@ import { connect } from 'react-redux';
 import { createEntry } from 'Redux/entry';
 import EntryForm from './EntryForm';
 
-import styles from 'Styles/styles.scss';
+import styles from 'Styles/_styles.scss';
 
 export const Blog = ({entries, dispatchCreateEntry}) => (
   <div>

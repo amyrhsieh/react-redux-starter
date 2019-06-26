@@ -1,5 +1,5 @@
-$color: #ddd;
+@import 'Styles/_variables.scss';
 
 body {
-  background-color: $color;
+  background-color: $bodyBackgroundColor;
 }

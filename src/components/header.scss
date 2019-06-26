@@ -1,12 +1,12 @@
-$header-background-color: #CFE3F0;
-
-a.active {
-  font-weight: bold;
-  color: blue;
-}
+@import 'Styles/_variables.scss';
 
 header {
-  background-color: $header-background-color;
+  background-color: $headerBackgroundColor;
   text-align: center;
   padding: 20px 0;
+}
+
+a.header__active {
+  font-weight: bold;
+  color: blue;
 }
