@@ -29,10 +29,10 @@ exports[`Header (Snapshot) Header component renders header nav 1`] = `
       <a
         aria-current={null}
         className="nav-link"
-        href="/events"
+        href="/blog"
         onClick={[Function]}
       >
-        Events
+        Blog
       </a>
     </div>
     <div
@@ -41,10 +41,10 @@ exports[`Header (Snapshot) Header component renders header nav 1`] = `
       <a
         aria-current={null}
         className="nav-link"
-        href="/blog"
+        href="/events"
         onClick={[Function]}
       >
-        Blog
+        Events
       </a>
     </div>
   </div>
