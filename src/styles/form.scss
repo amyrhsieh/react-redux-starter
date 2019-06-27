@@ -5,6 +5,7 @@
 
 .standard-form textarea {
   width: 550px;
+  max-width: calc(100vw - 40px);
   height: 100px;
 }
 
