@@ -1,4 +1,5 @@
-import { createStore, combineReducers } from 'redux';
+import { createStore, combineReducers, applyMiddleware, compose } from 'redux';
+import thunk from "redux-thunk";
 import eventReducer from './event';
 import entryReducer from './entry';
 import entries from 'Mocks/entriesMock';
@@ -14,4 +15,11 @@ export const reducer = combineReducers({
   entries: entryReducer
 });
 
-export const store = createStore(reducer, initialState, window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__());
+const composeEnhancers = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;
+export const store = createStore(
+  reducer,
+  initialState,
+  composeEnhancers(
+    applyMiddleware(thunk)
+  )
+);
