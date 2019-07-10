@@ -70,7 +70,8 @@
       "^Tests(.*)$": "<rootDir>/src/__tests__$1",
       "^Components(.*)$": "<rootDir>/src/components$1",
       "^Redux(.*)$": "<rootDir>/src/redux$1",
-      "^Styles(.*)$": "<rootDir>/src/styles$1"
+      "^Styles(.*)$": "<rootDir>/src/styles$1",
+      "^Services(.*)$": "<rootDir>/src/services$1"
     },
     "setupFilesAfterEnv": [
       "<rootDir>/enzymeSetup.js"

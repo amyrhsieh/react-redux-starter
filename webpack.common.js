@@ -50,7 +50,8 @@ module.exports = {
       Components: path.resolve(__dirname, 'src/components/'),
       Redux: path.resolve(__dirname, 'src/redux/'),
       Images: path.resolve(__dirname, 'src/images/'),
-      Styles: path.resolve(__dirname, 'src/styles/')
+      Styles: path.resolve(__dirname, 'src/styles/'),
+      Services: path.resolve(__dirname, 'src/services/')
     }
   },
   plugins: [

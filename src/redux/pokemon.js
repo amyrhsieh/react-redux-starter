@@ -1,12 +1,4 @@
-
-export const catchEmAll = () => (
-  fetch('https://pokeapi.co/api/v2/pokemon', {
-    method: 'GET'
-  })
-  .then(response => response.json())
-  .then(response => console.log('Success:', JSON.stringify(response)))
-  .catch(error => console.error('Error:', error))
-)
+import { catchEmAll } from 'Services/pokemonService';
 
 export const FETCH_POKEMON_BEGIN   = 'FETCH_POKEMON_BEGIN';
 export const FETCH_POKEMON_SUCCESS = 'FETCH_POKEMON_SUCCESS';
@@ -43,11 +35,7 @@ export default function pokemonReducer(state = [], action) {
 export function fetchPokemon() {
   return function(dispatch) {
     dispatch(fetchPokemonBegin());
-    return fetch('https://pokeapi.co/api/v2/pokemon')
-      .then(
-        response => response.json(),
-        error => console.log('An error occurred.', error)
-      )
+    return catchEmAll()
       .then(json =>
         dispatch(fetchPokemonSuccess(json.results))
       )
