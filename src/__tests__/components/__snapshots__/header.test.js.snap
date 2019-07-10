@@ -15,7 +15,7 @@ exports[`Header (Snapshot) Header component renders header nav 1`] = `
     >
       <a
         aria-current="page"
-        className="nav-link active"
+        className="nav-link header__active"
         href="/"
         onClick={[Function]}
         style={Object {}}

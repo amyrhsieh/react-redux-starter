@@ -34,6 +34,18 @@ exports[`Main (Snapshot) Main component renders Main 1`] = `
       }
       path="/blog"
     />
+    <Route
+      component={
+        Object {
+          "$$typeof": Symbol(react.memo),
+          "WrappedComponent": [Function],
+          "compare": null,
+          "displayName": "Connect(Pokemon)",
+          "type": [Function],
+        }
+      }
+      path="/pokemon"
+    />
   </Switch>
 </main>
 `;
